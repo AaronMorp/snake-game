@@ -86,6 +86,7 @@ class Game(private val scope: CoroutineScope) {
 
                     if (newPosition == it.food) {
                         snakeLength++
+                        println("Length: $snakeLength")
                     }
 
                     if (it.snake.contains(newPosition)) {
